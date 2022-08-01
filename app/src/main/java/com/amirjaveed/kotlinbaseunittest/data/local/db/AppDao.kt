@@ -11,6 +11,7 @@ interface AppDao {
     @Insert
     suspend fun addSpend(spend: Spend)
 
-    @Query("select * from spends Order by date desc limit 20")
+
+    @Query("SELECT * FROM spends ORDER BY date DESC LIMIT 20")
     suspend fun getAllSpend(): List<Spend>
 }
