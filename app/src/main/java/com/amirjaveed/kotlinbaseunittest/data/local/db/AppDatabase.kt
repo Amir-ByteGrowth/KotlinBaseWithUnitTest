@@ -4,11 +4,14 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import com.amirjaveed.kotlinbaseunittest.constants.AppConstants
 import com.amirjaveed.kotlinbaseunittest.data.models.PostsResponseItem
+import com.amirjaveed.kotlinbaseunittest.data.models.Spend
 
 
-@Database(entities = [PostsResponseItem::class], version = 1, exportSchema = false)
+@Database(entities = [PostsResponseItem::class, Spend::class], version = 1, exportSchema = false)
+@TypeConverters(DateConverter::class)
 abstract class AppDatabase : RoomDatabase(){
 
     abstract fun appDao(): AppDao
