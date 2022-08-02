@@ -6,8 +6,7 @@ import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.amirjaveed.kotlinbaseunittest.data.local.db.AppDatabase
-import com.amirjaveed.kotlinbaseunittest.data.models.Spend
-import com.amirjaveed.kotlinbaseunittest.data.remote.reporitory.MainRepository
+import com.amirjaveed.kotlinbaseunittest.data.remote.repository.MainRepository
 import com.amirjaveed.kotlinbaseunittest.ui.firstfragment.getOrAwaitValue
 import com.google.common.truth.Truth
 import junit.framework.TestCase

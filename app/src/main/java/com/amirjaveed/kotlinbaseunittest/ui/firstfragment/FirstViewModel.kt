@@ -1,18 +1,15 @@
 package com.amirjaveed.kotlinbaseunittest.ui.firstfragment
 
-import android.util.Log
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.amirjaveed.kotlinbaseunittest.data.models.PostsResponse
-import com.amirjaveed.kotlinbaseunittest.data.models.Spend
 import com.amirjaveed.kotlinbaseunittest.data.remote.Resource
-import com.amirjaveed.kotlinbaseunittest.data.remote.reporitory.MainRepository
+import com.amirjaveed.kotlinbaseunittest.data.remote.repository.MainRepository
 import com.amirjaveed.kotlinbaseunittest.utils.NetworkHelper
 import kotlinx.coroutines.launch
-import java.util.*
 
 
 class FirstViewModel @ViewModelInject constructor(

@@ -6,7 +6,7 @@ import com.amirjaveed.kotlinbaseunittest.constants.AppConstants
 import com.amirjaveed.kotlinbaseunittest.data.local.db.AppDao
 import com.amirjaveed.kotlinbaseunittest.data.local.db.AppDatabase
 import com.amirjaveed.kotlinbaseunittest.data.remote.ApiService
-import com.amirjaveed.kotlinbaseunittest.data.remote.reporitory.MainRepository
+import com.amirjaveed.kotlinbaseunittest.data.remote.repository.MainRepository
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module

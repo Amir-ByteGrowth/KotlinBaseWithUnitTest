@@ -1,33 +1,23 @@
 package com.amirjaveed.kotlinbaseunittest.ui.firstfragment
 
 import android.content.Context
-import android.util.Log
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.amirjaveed.kotlinbaseunittest.BuildConfig
-import com.amirjaveed.kotlinbaseunittest.constants.AppConstants
-import com.amirjaveed.kotlinbaseunittest.data.local.db.AppDao
 import com.amirjaveed.kotlinbaseunittest.data.local.db.AppDatabase
 import com.amirjaveed.kotlinbaseunittest.data.models.PostsResponse
 import com.amirjaveed.kotlinbaseunittest.data.models.PostsResponseItem
-import com.amirjaveed.kotlinbaseunittest.data.models.Spend
 import com.amirjaveed.kotlinbaseunittest.data.remote.ApiService
 import com.amirjaveed.kotlinbaseunittest.data.remote.Resource
-import com.amirjaveed.kotlinbaseunittest.data.remote.reporitory.MainRepository
+import com.amirjaveed.kotlinbaseunittest.data.remote.repository.MainRepository
 import com.amirjaveed.kotlinbaseunittest.utils.NetworkHelper
-import com.google.gson.Gson
-import com.google.gson.GsonBuilder
-import com.squareup.okhttp.mockwebserver.MockWebServer
 import junit.framework.TestCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.setMain
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -36,8 +26,7 @@ import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+
 @ExperimentalCoroutinesApi
 @RunWith(AndroidJUnit4::class)
 class FirstViewModelTest : TestCase() {

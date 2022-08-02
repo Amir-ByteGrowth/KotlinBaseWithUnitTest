@@ -1,7 +1,6 @@
-package com.amirjaveed.kotlinbaseunittest.data.remote.reporitory
+package com.amirjaveed.kotlinbaseunittest.data.remote.repository
 
 import android.content.Context
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -9,10 +8,8 @@ import com.amirjaveed.kotlinbaseunittest.data.local.db.AppDatabase
 import com.amirjaveed.kotlinbaseunittest.data.models.PostsResponse
 import com.amirjaveed.kotlinbaseunittest.data.remote.ApiService
 import junit.framework.TestCase
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 

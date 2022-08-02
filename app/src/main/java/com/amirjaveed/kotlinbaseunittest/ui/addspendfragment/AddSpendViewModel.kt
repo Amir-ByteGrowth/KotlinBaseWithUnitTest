@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.amirjaveed.kotlinbaseunittest.data.models.Spend
-import com.amirjaveed.kotlinbaseunittest.data.remote.reporitory.MainRepository
+import com.amirjaveed.kotlinbaseunittest.data.remote.repository.MainRepository
 import kotlinx.coroutines.launch
 import java.util.*
 

@@ -1,4 +1,4 @@
-package com.amirjaveed.kotlinbaseunittest.data.remote.reporitory
+package com.amirjaveed.kotlinbaseunittest.data.remote.repository
 
 import com.amirjaveed.kotlinbaseunittest.data.local.db.AppDao
 import com.amirjaveed.kotlinbaseunittest.data.models.Spend
