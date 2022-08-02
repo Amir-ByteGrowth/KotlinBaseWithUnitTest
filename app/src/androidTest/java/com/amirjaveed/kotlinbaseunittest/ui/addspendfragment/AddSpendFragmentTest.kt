@@ -32,6 +32,7 @@ class AddSpendFragmentTest {
         val amount = 0
         val desc = "Bought Eggs"
         //Espresso Matcher and Action
+
         Espresso.onView(withId(R.id.etAmount)).perform(ViewActions.typeText(amount.toString()))
         Espresso.onView(withId(R.id.etDescription)).perform(ViewActions.typeText(desc))
         Espresso.closeSoftKeyboard()
