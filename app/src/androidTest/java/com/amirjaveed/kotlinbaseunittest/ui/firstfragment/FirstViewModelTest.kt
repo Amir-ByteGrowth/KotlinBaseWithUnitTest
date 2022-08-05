@@ -63,13 +63,13 @@ class FirstViewModelTest : TestCase() {
 
         val postsResponse=PostsResponse()
         postsResponse.add(PostsResponseItem("abc",1,"title",1))
-
+        val postsResponse2=PostsResponse()
         runBlocking {
             Mockito.`when`(mainRepository.getPosts())
                 .thenReturn(Response.success(postsResponse))
             mainViewModel.fetchPostsFromApi()
             val result = mainViewModel.postsData.getOrAwaitValue()
-            assertEquals(Resource.success(postsResponse), result)
+            assertEquals(Resource.success(postsResponse2), result)
         }
     }
 
