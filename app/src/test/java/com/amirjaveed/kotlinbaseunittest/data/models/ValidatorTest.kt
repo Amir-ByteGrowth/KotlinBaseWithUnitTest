@@ -11,7 +11,7 @@ class ValidatorTest : TestCase(){
 
     @Test
     fun whenValidInput(){
-        val amount=100
+        val amount=0
         val description="Description"
         val result=Validator.validateInput(amount,description)
         assertThat(result).isEqualTo(true)
