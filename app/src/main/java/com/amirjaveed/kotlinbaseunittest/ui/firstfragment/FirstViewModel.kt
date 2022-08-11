@@ -9,6 +9,7 @@ import com.amirjaveed.kotlinbaseunittest.data.models.PostsResponse
 import com.amirjaveed.kotlinbaseunittest.data.remote.Resource
 import com.amirjaveed.kotlinbaseunittest.data.remote.repository.MainRepository
 import com.amirjaveed.kotlinbaseunittest.utils.NetworkHelper
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 
@@ -25,6 +26,8 @@ class FirstViewModel @ViewModelInject constructor(
 
     fun fetchPostsFromApi() {
         viewModelScope.launch {
+            val resOne = async{mainRepository.getPosts()}
+            resOne.await()?.isSuccessful
             _posts.postValue(Resource.loading(null))
             if (networkHelper.isNetworkConnected()) {
                 mainRepository.getPosts().let {
